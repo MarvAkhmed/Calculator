@@ -43,6 +43,11 @@ class ButtonCellCollectionView: UICollectionViewCell {
         }
         self.setupUI()
     }
+    
+    public func setOperaionSelected() {
+        self.titleLabel.textColor = .orange
+        self.backgroundColor = .white
+    }
     //MARK: - Setup UI for a circular buttons titles
     private func setupUI() {
         self.addSubview(self.titleLabel)
