@@ -89,9 +89,9 @@ class ButtonCellCollectionView: UICollectionViewCell {
 //}
 
 //MARK: -TODO:
-//1- study UICollectionViewCell
-//2- study UICollectionViewDelegateFlowLayout
-//3- study UICollectionReusableView
+//1- study UICollectionReusableView
+//2- study UICollectionViewCell
+//3- study UICollectionViewDelegateFlowLayout
 //4- study MVVM
 //5- study prepareForReuse
 //6- study UICollectionViewDelegate, UICollectionViewDataSource
