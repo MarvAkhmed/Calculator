@@ -164,9 +164,10 @@ extension CalculatorViewModel {
             self.operation = operaion
             self.currentNumber = .secondNumber
         }else if self.currentNumber == .secondNumber { // when the result apears after clicking the operaion 3 times.
-            if let firstNumber = self.firstNumber,
+            if let prevOperaion = self.operation,
+            let firstNumber = self.firstNumber,
                let secondNumber = self.secondNumber {
-                let result = self.getOperaionResult(operaion, firstNumber, secondNumber)
+                let result = self.getOperaionResult(prevOperaion, firstNumber, secondNumber)
                 self.secondNumber = nil // reset the second number , cuz we set the current number to the second number and then we are gonna set the first number to the result
                 self.firstNumber = result
                 self.currentNumber = .secondNumber
